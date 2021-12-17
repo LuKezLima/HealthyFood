@@ -568,6 +568,7 @@ h4{
         font-size: 38%;
     }
 }
+
 @media screen and (max-width: 769px) { 
     html{
         font-size: 60%;
@@ -775,6 +776,87 @@ h4{
        margin: 0 auto;
    };
 }
+
+@media (max-width: 769px) and (orientation: landscape)  {
+    html
+    {
+     font-size: 40%;
+    }
+    .image-mobile{
+        width: 24%;
+    }
+    .image-mobile2{
+        width: 55%;
+        margin: 0 auto;
+    }
+    figure{
+        margin-top: 2rem;
+    }
+    #services{
+        flex-direction: row;
+    }
+    .image-container{
+        width: 55%;
+       
+    }
+
+    .info{
+        width: 37%;
+        
+    }
+
+    .title-blog{
+        position: absolute;
+        margin-top: -75px;
+        color: rgb(255, 255, 255);
+        font-weight:bolder;
+        font-size:2.2rem;
+        text-shadow: #000000 1px 1px;
+        
+    }
+
+    #blog-group{
+        width: 90%;
+        margin: 0 auto;
+        justify-items: center;
+        margin-top: 4rem;
+    }
+
+    .image-blog-group{
+        height: 65%;
+    }
+
+
+
+    .photo-author{
+        width: 10%;
+    }
+
+    .blog-card{
+        height: 74%;
+        align-self: baseline;
+    }
+    .recipe{
+        width:70%;
+        height: 73%;
+        align-self:baseline;
+
+    }
+    #recipes-container{
+        width: 100%;
+    }
+    #recipes-group{
+     margin-top: 2rem;
+    }
+
+    .btn-recipe{
+        height: auto;
+        padding: 6px 20px;
+    }
+    
+}
+
+
 @media screen and (max-width: 601px) {
     html{
         font-size: 48%;
