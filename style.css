@@ -346,7 +346,7 @@ width: 50%;
 }
 
 .title-blog{
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-family: 'Montserrat' sans-serif;
     color: var(--secondary--color);
 }
@@ -831,7 +831,7 @@ h4{
         margin-top: -90px;
         color: rgb(255, 255, 255);
         font-weight:bolder;
-        font-size:2.4rem;
+        font-size:2.2rem;
         text-shadow: #000000 1px 1px;
         
     }
