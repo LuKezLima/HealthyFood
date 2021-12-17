@@ -154,7 +154,7 @@ margin-top: 1rem;
     background-color: var(--main--color);
     color: #fff;
     border: none;
-    background-image: url(/images/magnifying-glass.png);
+    background-image: url(./images/magnifying-glass.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
