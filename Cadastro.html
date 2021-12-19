@@ -1,0 +1,141 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav">
+            <input type="checkbox" id="check">
+            <label for="check" id="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <h1><a id="title" href="/index.html">Healthy Food</a></h1>
+            <ul>
+                <li > <a id="btn-register" href="/index.html">Home</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="form">
+            <h2>Sign Up</h2>
+            <form action="" method="POST">
+
+                    <div class="input-group" id="name">
+                        <label for="birth">Name</label>
+                        <input type="text" id="input-name"placeholder="Name">
+                    </div>
+                    
+                    <div class="input-group" id="id">
+                        <label for="birth">ID</label>
+                        <input type="text" id="input-id" placeholder="ID" maxlength="14">
+                    </div>
+
+                    
+                    <div class="input-group" id="email">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="input-email" placeholder="E-mail">
+                    </div>
+                   
+                    
+       
+                    <div class="input-group" id="birth" >
+                        <label for="birth">Birth date</label>
+                        <input type="date"  name="birth" id="input-birth"  placeholder="Birth date">
+                    </div>
+
+                    <div class="input-group" id="zip">
+                        <label for="zip">Zip code</label>
+                        <input type="text"  id="input-zip" placeholder="Zip code" maxlength="8">
+                    </div>
+                    
+                    <div class="input-group" id="state">
+                        <label for="state">State</label>
+                        <input type="text"  id="input-state" placeholder="State" readonly>
+                    </div>
+                    <div class="input-group" id="city">
+                        <label for="city">City </label>
+                        <input type="text"   id="input-city" placeholder="City" readonly>
+                    </div>
+                    <div class="input-group" id="district">
+                        <label for="district">District</label>
+                        <input type="text" id="input-district" placeholder="District" readonly>
+                    </div>
+                    <div class="input-group" id="street">
+                        <label for="street">Street</label>
+                        <input type="text" id="input-street" placeholder="Street" readonly>
+                    </div>
+         
+                    <button id="btnSave">Save</button>
+            </form>
+        </div>
+        <section id="register">
+            
+            <div id="table" style="overflow-x: scroll;">
+                <table id="data-table">
+                    <thead >
+                        <tr>
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>E-mail</th>
+                            <th>Birth Date</th>
+                            <th>Zip code</th>
+                            <th>State</th>
+                            <th>City</th>
+                            <th>District</th>
+                            <th>Street</th>
+                            <th></th>
+                        </tr>
+            
+                    </thead>
+                    <tbody id="tbody">
+                        <tr>
+                            <td>Lucas Lima</td>
+                            <td>42291783874</td>
+                            <td>Lucas.ll@gmail.com</td>
+                            <td>12/05/2002</td>
+                            <td>01105-004</td>
+                            <td>SP</td>
+                            <td>São paulo</td>
+                            <td>Vila mariana</td>
+                            <td>Jardim bonito</td>
+                            <td>
+                                <i class="fas fa-user-minus"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Lucas de Lima Passos</td>
+                            <td>42291783874</td>
+                            <td>Lucas.ll.lima@gmail.com</td>
+                            <td>12/05/2002</td>
+                            <td>01105-004</td>
+                            <td>SP</td>
+                            <td>São paulo</td>
+                            <td>Vila mariana</td>
+                            <td>Rua guilherme maw</td>
+                            <td>
+                                <i class="fas fa-user-minus"></i>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </section>
+          
+            
+
+        </main>
+</body>
+
+
+<script src="./teste.js"></script>
+</html>

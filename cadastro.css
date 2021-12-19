@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+:root{
+    --main--color: #BADC58;
+    --secondary--color: #1D164D;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+}
+.section{
+    height: 100vh;
+    width: 100%;
+}
+#header{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 4px 13px 0px #d6d6d6;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    color: var(--main--color);
+}
+
+#nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    margin: 0px 10px;
+    padding: 12px 25px;
+    font-family: 'muli', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+li a:hover{
+   border-bottom: 3px var(--main--color) solid;
+}
+#checkbtn{
+    font-size: 2.6rem;
+    color: rgb(30, 51, 42);
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+#btn-register{
+    background-color: white;
+    color: var(--main--color);
+    border-radius: 4px;
+}
+
+#register{
+    width: 81%;
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+#table{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#data-table{
+    width: 100%;
+    border-spacing: 1rem;
+    color: #ffffff;
+}
+
+table tbody tr{
+    opacity: 1;
+}
+table  tbody tr:hover{
+    opacity: 0.9;
+}
+
+
+table th{
+    background: var(--main--color);
+    font-weight: normal;
+    padding: 1.2rem 1.4rem;
+    text-align: left;
+    font-size: 1.5rem;
+    border-radius: 5px 5px 0 0;
+  
+}
+table td{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 1rem;
+    box-shadow: 5px 5px 15px 0px #d6d6d6;
+    color: var(--secondary--color);
+    font-size: 1.3rem;
+    border-radius: 0 0 5px 5px;
+}
+
+
+
+#form{  
+    background-color:#ffffff; 
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 15px 0px #d6d6d6;
+    margin-top: 3rem;
+}
+
+form{
+    margin-top: 2rem;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100x, 1fr));
+    grid-template-areas: "name name email"
+                            "id birth zip"
+                             "state city district"
+                             "street - -";
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+#form h2{
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: var(--secondary--color);
+    text-decoration: underline;
+}
+i{
+    cursor: pointer;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+}
+
+#name{
+
+    grid-area: name;
+}
+
+#name input{
+    width: 100%;
+}
+
+#email{
+   
+    grid-area: email;
+}
+#id{
+   
+    grid-area: id;
+}
+#birth{
+    grid-area: birth;
+}
+#zip{
+  
+    grid-area: zip;
+}
+#district{
+    
+    grid-area: district;
+}
+#state{
+   
+    grid-area: state
+        
+}
+#city{
+  
+    grid-area: city;
+}
+#street{
+
+    grid-area: street;
+}
+
+input{
+    border: none;
+    border-radius: 0.3rem;
+    padding: 1.5rem 1rem;
+    outline: none;
+    background-color:#a1a1a123;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 100%;
+    height: 3rem;
+    margin: .5rem 0
+}
+
+input:read-only{
+    background-color: rgb(202, 199, 199);
+    color: rgb(138, 138, 138)
+}
+
+input:focus{
+    border: .5px solid black;
+}
+label{
+    font-size: 1.4rem;
+    color: black;
+    letter-spacing: .2rem;
+}
+
+button{
+    border: none;
+    border-radius: .5rem;
+    background-color: #241d52;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.6rem;
+    width: 60%;
+    align-self:flex-end;
+    height: 80%;
+}
+
+
+button:hover{
+    opacity: 0.9;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1000px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html{
+        font-size: 45%;
+    }
+
+    form{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "name email"
+        "id birth"
+        "zip state"
+        "city district"
+        "street -"  
+    }
+}
+
+@media screen and (max-width: 425px) {
+    html{
+        font-size: 42%;
+    }
+    #nav, #register, #form{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html{
+        font-size: 39%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html{
+        font-size: 35%;
+    }
+
+
+}

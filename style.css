@@ -568,6 +568,8 @@ h4{
         font-size: 38%;
     }
 }
+
+/*Configuração Mobile - Portrait */
 @media screen and (max-width: 769px) { 
     html{
         font-size: 60%;
@@ -858,6 +860,17 @@ h4{
             font-size: 32%;
         }
 }
+@media screen and (max-width: 250px) {
+    html{
+        font-size: 21%;
+    }
+
+    .title-blog{
+        margin-top: -40px;
+    }
+}
+
+/*Configuração Mobile - Landscape */
 @media (max-width: 800px) and (orientation: landscape)  {
     html
     {
